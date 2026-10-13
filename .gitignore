@@ -1,0 +1,45 @@
+# R
+.Rhistory
+.RData
+.Ruserdata
+.Rproj.user/
+*.Rproj
+
+# Operating systems
+.DS_Store
+Thumbs.db
+
+# Temporary / editor files
+*.tmp
+*.temp
+*~
+.vscode/
+.idea/
+
+# Raster and GIS outputs
+*.tif
+*.tiff
+*.vrt
+*.aux.xml
+*.ovr
+*.gpkg
+*.shp
+*.shx
+*.dbf
+*.prj
+*.cpg
+
+# Large environmental inputs
+data/*.nc
+data/*.nc4
+data/*.grd
+data/*.img
+data/*.bil
+data/*.asc
+
+# Keep documentation in data/
+!data/README.md
+
+# Example outputs
+examples/output/
+examples/example_data/

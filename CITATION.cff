@@ -1,0 +1,23 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite the repository and the relevant methodological publications listed in the README."
+title: "Bare-Bones Geographic Body Heat Storage (BHS) Model"
+type: software
+authors:
+  - family-names: "Chambers"
+    given-names: "Samuel N."
+version: 0.1.0
+date-released: 2026-09-30
+license: MIT
+keywords:
+  - biometeorology
+  - body heat storage
+  - heat balance
+  - core temperature
+  - GIS
+  - raster
+  - thermal physiology
+abstract: >-
+  A minimal R/terra implementation of a spatially explicit human body
+  heat-storage model that accepts user-supplied climate rasters and can
+  return body heat storage in watts, estimated temperature change per hour,
+  and estimated temperature change per meter walked.
