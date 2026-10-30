@@ -1,6 +1,6 @@
 cff-version: 1.2.0
 message: "If you use this software, please cite the repository and the relevant methodological publications listed in the README."
-title: "Bare-Bones Geographic Body Heat Storage (BHS) Model"
+title: "Geographic Body Heat Storage (BHS) Model"
 type: software
 authors:
   - family-names: "Chambers"
