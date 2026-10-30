@@ -1,11 +1,18 @@
 cff-version: 1.2.0
-message: "If you use this software, please cite the repository and the relevant methodological publications listed in the README."
+message: "If you use this software, please cite it as below."
+
 title: "Geographic Body Heat Storage (BHS) Model"
-type: software
+
 authors:
   - family-names: "Chambers"
     given-names: "Samuel N."
-version: 0.1.0
+
+version: "1.0.0"
+
+doi: "10.5281/zenodo.23816752"
+
+url: "https://github.com/spatiosam/bhs-model"
+
 date-released: 2026-09-30
 license: MIT
 keywords:
