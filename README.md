@@ -4,6 +4,8 @@ A small R implementation of a spatially explicit human body heat-storage model. 
 
 This version is designed as a transparent research script rather than an R package. It omits land-surface temperature (LST), land cover, canopy, sky-view factor, route reconstruction, and other project-specific inputs.
 
+A versioned release of the model is permanently archived in Zenodo: https://doi.org/10.5281/zenodo.23816752
+
 ## What the model uses
 
 Required raster inputs:
@@ -128,7 +130,7 @@ The core heat-balance structure follows the published BHS/ΔTcore lineage:
 
 \[
 BHS = M - W + C + R - (C\_{res} + E\_{res}) - E\_{max}
-]
+\]
 
 where `M` is metabolic heat production, `W` is external work, `C` and `R` are convective and radiative exchange, `Cres` and `Eres` are respiratory heat exchange, and `Emax` is evaporative heat-loss capacity.
 
@@ -137,7 +139,7 @@ The temperature-rate output is calculated directly from total heat storage and w
 \[
 \\Delta T / \\Delta t =
 \\frac{BHS}{m c}
-]
+\]
 
 and converted to °C/h by multiplying by 3600 seconds per hour.
 
@@ -146,7 +148,7 @@ For a person walking at speed (v),
 \[
 \\Delta T / \\Delta x =
 \\frac{BHS}{m c v}
-]
+\]
 
 which produces °C per meter.
 
@@ -154,7 +156,7 @@ Radiant temperature is supplied directly and radiative exchange is calculated ag
 
 ## Methodological lineage
 
-The repository intentionally limits its methodological citations to four sources.
+The repository intentionally limits its methodological citations to five sources.
 
 **Physiological heat-exchange basis**
 
@@ -171,6 +173,10 @@ Chambers, S. N., Brown, H. E., Keith, L., \& Austhof, E. (2023). Development of 
 **Terrain/exertion extension**
 
 Chambers, S. N., Boyce, G. A., Martínez, D. E., Bongers, C. C. W. G., \& Keith, L. (2023). The contribution of physical exertion to heat-related illness and death in the Arizona borderlands. *Spatial and Spatio-temporal Epidemiology, 46*, 100590. https://doi.org/10.1016/j.sste.2023.100590
+
+**Spatiotemporal radiation and heat-exposure extension**
+
+Chambers, S. N. (2027). Reconstructing the environmental and temporal contexts of heat-related deaths on the Arizona Borderscape through a multivariate typology of heat exposure. *Applied Geography*, 104219. https://doi.org/10.1016/j.apgeog.2026.104219
 
 ## Scope and limitations
 
@@ -209,5 +215,10 @@ Code in this repository is released under the MIT License. The cited publication
 
 GitHub will display a **Cite this repository** option from `CITATION.cff`.
 
-When using the model scientifically, cite the software repository together with the methodological publication or publications relevant to the implementation being used.
+A versioned release of the software is permanently archived in Zenodo:
 
+Chambers, S. N. (2026). *Geographic Body Heat Storage (BHS) Model* (Version 1.0.0) [Computer software]. Zenodo. https://doi.org/10.5281/zenodo.23816752
+
+When using the model scientifically, cite the archived software release together with the methodological publication or publications relevant to the implementation being used.
+
+The GitHub repository contains the current development version of the model, while the Zenodo record provides a permanent, citable archive of the released software version.
